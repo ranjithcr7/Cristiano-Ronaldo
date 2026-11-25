@@ -1,0 +1,101 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #100b20;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #18102b;
+}
+
+header h2 {
+  color: #b99aff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  min-height: 75vh;
+  padding: 120px 10%;
+  text-align: center;
+  background: radial-gradient(circle, #40206e, #100b20 70%);
+}
+
+.tag {
+  color: #c3a5ff;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #b58aff;
+}
+
+.hero p {
+  line-height: 1.8;
+}
+
+.button, button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #9256ed;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#creator, #features, #about {
+  padding: 65px 10%;
+  text-align: center;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #72539b;
+  background: #211632;
+  color: white;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+#result {
+  margin: 25px auto;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #18102b;
+}
