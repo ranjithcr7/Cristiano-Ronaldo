@@ -1,0 +1,28 @@
+
+function createCharacter() {
+  const name = document.getElementById("name").value.trim();
+  const personality = document.getElementById("personality").value;
+  const description = document.getElementById("description").value.trim();
+
+  if (!name) {
+    alert("Please enter a character name!");
+    return;
+  }
+
+  document.getElementById("result").innerHTML = `
+    <h2>${escapeHTML(name)}</h2>
+    <p><strong>Personality:</strong> ${escapeHTML(personality)}</p>
+    <p><strong>About:</strong> ${escapeHTML(description || "A newly created character.")}</p>
+    <p>Your character profile has been created!</p>
+  `;
+}
+
+function escapeHTML(value) {
+  return value.replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
